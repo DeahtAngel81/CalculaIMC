@@ -50,6 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/etPeso" />
 
+    <!-- Agora está organizado -->
+
     <TextView
         android:id="@+id/tvImc"
         android:layout_width="wrap_content"
