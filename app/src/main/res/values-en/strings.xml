@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculate BMI</string>
+    <string name="Peso">Weight</string>
+    <string name="Altura">Height</string>
+    <string name="Imc">Bmi</string>
+    <string name="zeros">0.0</string>
+    <string name="toast_limpar">Form cleared</string>
+    <string name="error_peso">Enter weight</string>
+    <string name="error_altura">Enter height</string>
+    <string name="Calcular">calculate</string>
+    <string name="Limpar">clear</string>
+    <string name="hint_peso">numberDecimal</string>
+    <string name="hint_altura">numberDecimal</string>
+</resources>

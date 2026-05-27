@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Calcula IMC</string>
-    <string name="Peso">Peso:</string>
-    <string name="Altura">altura</string>
-    <string name="Imc">imc</string>
-    <string name="Zeros">zeros</string>
+    <string name="Peso">Peso</string>
+    <string name="Altura">Altura</string>
+    <string name="Imc">Imc</string>
+    <string name="zeros">0,00</string>
+    <string name="toast_limpar">Formulário limpo</string>
+    <string name="error_peso">Informe o peso</string>
+    <string name="error_altura">Informe a altura</string>
     <string name="Calcular">calcular</string>
     <string name="Limpar">limpar</string>
-
-
+    <string name="hint_peso">numberDecimal</string>
+    <string name="hint_altura">numberDecimal</string>
 </resources>
