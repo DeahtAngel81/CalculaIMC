@@ -11,44 +11,44 @@
         android:id="@+id/tvPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Peso"
+        android:text="@string/Peso"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/etPeso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="peso"
+        android:hint="@string/Peso"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:padding="16dp"
         app:layout_constraintStart_toEndOf="@id/tvPeso"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tvAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="altura"
+        android:text="@string/Altura"
         android:padding="16dp"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvPeso" />
+        app:layout_constraintBottom_toTopOf="@id/tvPeso"/>
 
     <EditText
         android:id="@+id/etAltura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="altura"
+        android:hint="@string/Altura"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="@id/etPeso"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/etPeso" />
+        app:layout_constraintTop_toTopOf="@id/etPeso"/>
 
     <!-- Agora está organizado -->
 
@@ -56,7 +56,7 @@
         android:id="@+id/tvImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="imc"
+        android:text="@string/Imc"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAltura" />
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="zeros"
+        android:text="@string/Zeros"
         android:padding="16dp"
         app:layout_constraintStart_toEndOf="@id/tvImc"
         app:layout_constraintTop_toBottomOf="@id/etAltura" />
@@ -75,7 +75,7 @@
         android:id="@+id/btCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="calcular"
+        android:text="@string/Calcular"
         app:layout_constraintStart_toStartOf="@id/tvResultado"
         app:layout_constraintTop_toBottomOf="@id/tvResultado" />
 
@@ -90,7 +90,7 @@
         android:id="@+id/btLimpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="limpar"
+        android:text="@string/Limpar"
         app:layout_constraintStart_toEndOf="@id/espacoBotoes"
         app:layout_constraintTop_toBottomOf="@id/tvResultado"
         />

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Calcula IMC</string>
+    <string name="Peso">Peso:</string>
+    <string name="Altura">altura</string>
+    <string name="Imc">imc</string>
+    <string name="Zeros">zeros</string>
+    <string name="Calcular">calcular</string>
+    <string name="Limpar">limpar</string>
+
+
 </resources>
