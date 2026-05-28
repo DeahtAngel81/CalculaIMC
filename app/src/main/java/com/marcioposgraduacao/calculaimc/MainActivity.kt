@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         tvResultado.text = String.format(Locale.getDefault(), "%.2f", imc)
 
     }
-    
+
     class Calculo {
         fun calcularIMC(peso: Double, altura: Double): Double {
             return peso / altura.pow(2)

@@ -9,6 +9,6 @@
     <string name="error_altura">Informe a altura</string>
     <string name="Calcular">calcular</string>
     <string name="Limpar">limpar</string>
-    <string name="hint_peso">numberDecimal</string>
-    <string name="hint_altura">numberDecimal</string>
+    <string name="hint_peso">Informe o seu peso</string>
+    <string name="hint_altura">Informe a sua altura</string>
 </resources>

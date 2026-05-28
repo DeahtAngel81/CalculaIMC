@@ -9,6 +9,6 @@
     <string name="error_altura">Enter height</string>
     <string name="Calcular">calculate</string>
     <string name="Limpar">clear</string>
-    <string name="hint_peso">numberDecimal</string>
-    <string name="hint_altura">numberDecimal</string>
+    <string name="hint_peso">Please provide the weight.</string>
+    <string name="hint_altura">Please provide your height.</string>
 </resources>
