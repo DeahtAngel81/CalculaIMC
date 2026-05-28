@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcula IMC</string>
+    <string name="Peso">Peso</string>
+    <string name="Altura">Altura</string>
+    <string name="Imc">IMC</string>
+    <string name="zeros">0,00</string>
+    <string name="toast_limpar">Formulario limpiado</string>
+    <string name="error_peso">Ingrese el peso</string>
+    <string name="error_altura">Ingrese la altura</string>
+    <string name="Calcular">calcular</string>
+    <string name="Limpar">limpiar</string>
+    <string name="hint_peso">numberDecimal</string>
+    <string name="hint_altura">numberDecimal</string>
+</resources>
