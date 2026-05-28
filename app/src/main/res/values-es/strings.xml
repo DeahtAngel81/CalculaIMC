@@ -4,12 +4,16 @@
     <string name="Peso">Peso</string>
     <string name="Altura">Altura</string>
     <string name="Imc">IMC</string>
+
+    <string name="erro_peso">Campo peso debe ser completado.</string>
+    <string name="erro_altura">Campo altura debe ser completado.</string>
+    <string name="erro_zeros_altura">La altura no puede ser cero.</string>
+
+    <string name="calcular_clique_longo">Botón para calcular el IMC</string>
+    <string name="hint_peso">Informe su peso</string>
+    <string name="hint_altura">Informe su altura</string>
+
     <string name="zeros">0,00</string>
-    <string name="toast_limpar">Formulario limpiado</string>
-    <string name="error_peso">Ingrese el peso</string>
-    <string name="error_altura">Ingrese la altura</string>
     <string name="Calcular">calcular</string>
     <string name="Limpar">limpiar</string>
-    <string name="hint_peso">Por favor, indique su peso.</string>
-    <string name="hint_altura">Por favor, indique su estatura.</string>
 </resources>

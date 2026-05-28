@@ -2,13 +2,18 @@
     <string name="app_name">Calcula IMC</string>
     <string name="Peso">Peso</string>
     <string name="Altura">Altura</string>
-    <string name="Imc">Imc</string>
-    <string name="zeros">0,00</string>
-    <string name="toast_limpar">Formulário limpo</string>
-    <string name="error_peso">Informe o peso</string>
-    <string name="error_altura">Informe a altura</string>
-    <string name="Calcular">calcular</string>
-    <string name="Limpar">limpar</string>
+    <string name="Imc">IMC</string>
+
+    <string name="erro_peso"> Campo peso deve ser preenchido. </string>
+    <string name="erro_altura"> Campo altura deve ser preenchido. </string>
+    <string name="erro_zeros_altura"> Altura não pode ser zero. </string>
+
+    <string name="calcular_clique_longo">Botão para calcular o IMC</string>
     <string name="hint_peso">Informe o seu peso</string>
     <string name="hint_altura">Informe a sua altura</string>
+
+    <string name="zeros">0,00</string>
+    <string name="Calcular">calcular</string>
+    <string name="Limpar">limpar</string>
+
 </resources>

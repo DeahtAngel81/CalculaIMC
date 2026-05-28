@@ -6,6 +6,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.text.DecimalFormat
+import java.text.NumberFormat
 import java.util.Locale
 import kotlin.math.pow
 
@@ -36,45 +38,71 @@ class MainActivity : AppCompatActivity() {
             btLimparOnClick()
         }
 
-
-    }
+        btCalcular.setOnLongClickListener {
+            Toast.makeText(
+                this,
+                getString(R.string.calcular_clique_longo),
+                Toast.LENGTH_LONG
+            ).show()
+            true
+        }
+    } // fim do onCreate
 
     private fun btLimparOnClick() {
         etPeso.setText("")
         etAltura.setText("")
+
         tvResultado.text = getString(R.string.zeros)
+
         etPeso.requestFocus()
-        Toast.makeText(
-            this, getString(R.string.toast_limpar), Toast.LENGTH_SHORT
-        ).show()
-    }
+
+    }// fim do btLimparOnClick
 
     private fun btCalcularOnClick() {
-        if (etPeso.text.toString().isEmpty()) {
-            etPeso.error = getString(R.string.error_peso)
-            etPeso.requestFocus()
+
+        val pesoStr = etPeso.text.toString()
+        val alturaStr = etAltura.text.toString()
+
+        val peso = pesoStr.toDoubleOrNull()
+        val altura = alturaStr.toDoubleOrNull()
+
+        if (peso == null) {
+            etPeso.error = getString(R.string.erro_peso)
+            return
+        }
+        if (altura == null) {
+            etAltura.error = getString(R.string.erro_altura)
+            return
+        }
+        if (altura == 0.0) {
+            etAltura.error = getString(R.string.erro_zeros_altura)
             return
         }
 
-        if (etAltura.text.toString().isEmpty()) {
-            etAltura.error = getString(R.string.error_altura)
-            etAltura.requestFocus()
-            return
-        }
+        // processamento
 
-        val peso = etPeso.text.toString().toDouble()
-        val altura = etAltura.text.toString().toDouble()
+        val idioma = Locale.getDefault().language
 
-        val calculo = Calculo()
-        val imc = calculo.calcularIMC(peso, altura)
+        val imc = calcularImc(peso, altura, idioma)
 
-        tvResultado.text = String.format(Locale.getDefault(), "%.2f", imc)
+        //saída
+        val nf = NumberFormat.getNumberInstance(Locale.getDefault())
+        val df = nf as DecimalFormat
 
-    }
+        val resultado = df.format(imc)
+        tvResultado.text = resultado
 
-    class Calculo {
-        fun calcularIMC(peso: Double, altura: Double): Double {
-            return peso / altura.pow(2)
+    } // fim do btCalcularOnClick
+
+    companion object {
+        fun calcularImc(peso: Double, altura: Double, idioma: String): Double {
+
+            val imc = if (idioma == "en") {
+                703 * (peso / altura.pow(2))
+            } else {
+                peso / altura.pow(2)
+            }
+            return imc
         }
     }
 }

@@ -11,32 +11,32 @@
         android:id="@+id/tvPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Peso"
-        android:padding="16dp"
         android:layout_marginTop="64dp"
+        android:padding="16dp"
+        android:text="@string/Peso"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etPeso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:hint="@string/hint_peso"
-        android:inputType="numberDecimal"
         android:importantForAutofill="no"
+        android:inputType="numberDecimal"
         android:padding="16dp"
         android:textColorHint="#546E7A"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toEndOf="@id/tvPeso"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toEndOf="@id/tvPeso"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Altura"
         android:padding="16dp"
+        android:text="@string/Altura"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPeso" />
 
@@ -57,19 +57,19 @@
         android:id="@+id/tvIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Imc"
         android:padding="16dp"
+        android:text="@string/Imc"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etAltura" />
+        app:layout_constraintTop_toBottomOf="@id/tvAltura" />
 
 
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="24dp"
         android:text="@string/zeros"
-        android:padding="16dp"
-        app:layout_constraintStart_toStartOf="@id/etAltura"
+        app:layout_constraintStart_toEndOf="@id/tvIMC"
         app:layout_constraintTop_toBottomOf="@id/etAltura" />
 
     <Button
@@ -77,7 +77,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/Calcular"
-        android:layout_marginStart="-28dp"
         app:layout_constraintStart_toStartOf="@id/tvResultado"
         app:layout_constraintTop_toBottomOf="@id/tvResultado" />
 
@@ -86,7 +85,8 @@
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/btCalcular"
-        app:layout_constraintBottom_toBottomOf="@id/btCalcular" />
+        app:layout_constraintTop_toBottomOf="@id/tvResultado" />
+
 
     <Button
         android:id="@+id/btLimpar"
